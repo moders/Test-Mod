@@ -18,8 +18,8 @@ buildscript {
 apply plugin: 'forge'
 //the version of minecraft followed by the version of the mod
 version = "1.8-1.0"
-group= "com.nicodangelo.themodmod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "TheModMod"
+group= "com.nicodangelo.lumiere" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "Lumiere"
 
 minecraft {
     version = "1.8-11.14.3.1450"
