@@ -24,6 +24,7 @@ package com.nicodangelo.lumiere;
 import com.nicodangelo.lumiere.handler.ConfigurationHandler;
 import com.nicodangelo.lumiere.proxy.IProxy;
 import com.nicodangelo.lumiere.reference.Reference;
+import com.nicodangelo.lumiere.utility.LogHelper;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -48,17 +49,18 @@ public class Lumiere
     {
         //calls our method we made in ConfigurationHandler and gets the file that is best for us
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
+        LogHelper.info("Pre Initialization Complete!");
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {
-
+        LogHelper.info("Initialization Complete!");
     }
 
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event)
     {
-
+        LogHelper.info("Post Initialization Complete!");
     }
 }
