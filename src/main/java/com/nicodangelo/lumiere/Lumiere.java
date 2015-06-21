@@ -25,6 +25,7 @@ import com.nicodangelo.lumiere.handler.ConfigurationHandler;
 import com.nicodangelo.lumiere.proxy.IProxy;
 import com.nicodangelo.lumiere.reference.Reference;
 import com.nicodangelo.lumiere.utility.LogHelper;
+import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -49,6 +50,7 @@ public class Lumiere
     {
         //calls our method we made in ConfigurationHandler and gets the file that is best for us
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
+        FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
         LogHelper.info("Pre Initialization Complete!");
     }
 
