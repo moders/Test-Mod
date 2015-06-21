@@ -14,6 +14,7 @@
 
 package com.nicodangelo.lumiere;
 
+import com.nicodangelo.lumiere.configuration.ConfigurationHandler;
 import com.nicodangelo.lumiere.proxy.IProxy;
 import com.nicodangelo.lumiere.reference.Reference;
 import net.minecraftforge.fml.common.Mod;
@@ -34,10 +35,12 @@ public class Lumiere
 
     //These three events are a must have for the first class of the mod
     //Init stands for initialization
+    //handles config files
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-
+        //calls our method we made in ConfigurationHandler and gets the file that is best for us
+        ConfigurationHandler.init(event.getSuggestedConfigurationFile());
     }
 
     @Mod.EventHandler
