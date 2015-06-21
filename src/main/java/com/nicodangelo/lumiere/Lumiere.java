@@ -24,7 +24,7 @@ import java.beans.EventHandler;
 @Mod(modid="lumiere", name="Lumiere", version="1.8-1.0")
 public class Lumiere
 {
-    @Mod.Instance("Lumiere")
+    @Mod.Instance("lumiere")
     public static Lumiere instance;
 
     //These three events are a must have for the first class of the mod
