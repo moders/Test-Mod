@@ -1,0 +1,18 @@
+[
+{
+  "modid": "Lumiere",
+  "name": "Lumiere",
+  "description": "I dont know what to put here yet:)",
+  "version": "1.8-1.0",
+  "credits": "thank you all.. and the academy!!",
+  "logoFile": "",
+  "mcversion": "1.8",
+  "url": "",
+  "updateUrl": "",
+  "authors": ["nicodangelo", "baseballranger"],
+  "parent":"",
+  "screenshots": [],
+  "dependencies": [
+	 ""
+]
+}
