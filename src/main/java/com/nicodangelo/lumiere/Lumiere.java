@@ -4,6 +4,8 @@
 //so like botania and our mod and buildcraft all get to preInitialize before anyone gets to Initialize...
 //we don't have to worry about depending on any other mod in that respect:)
 
+//the files gui, models will not be loaded automatically by minecraft we have to do that ourselves:) later
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //preInit - initializing network stuff and more importantly initialize all the items and blocks you add...
